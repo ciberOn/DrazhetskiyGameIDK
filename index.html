@@ -1,11 +1,32 @@
 <!DOCTYPE html>
-<html lang ="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>    
-<body>
-    <h1>Change was pushed</h1>
-</body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>soul</title>
+
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="img/soul.png">
+    </head>
+
+    <body class="body">
+        <div class="flexContainer">
+            <div class="zone">
+                <img class="soul" src="img/soul.png" alt="the soul">
+            </div>
+        </div>
+
+        <div class="hepeContainer">
+
+            <p class="lv">lv 1</p>
+
+            <p class="hepe">hp</p>
+
+            <progress class="hepeBar" id="hepe" value="20" max="20"></progress>
+
+            <p class="hepeNumber"><span>20 </span>/ 20</p>
+        </div>
+
+        <script src="./js/app.js"></script>
+    </body>
 </html>
