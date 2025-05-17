@@ -1,7 +1,7 @@
 (function(){
     'use strict';
 
-    const heart = document.querySelector('.heart');
+    const heart = document.querySelector('.soul');
 
     let x = 35;
     let y = 25;
@@ -23,19 +23,19 @@
 
     (function gameLoop() {
         if (x > 0 && (keyState[37] || keyState[81])){
-            x -= 0.4;
+            x -= 0.5;
         }
 
         if (x < 73.1 && (keyState[39] || keyState[68])){
-            x += 0.4;
+            x += 0.5;
         }
 
         if (y > 0 && (keyState[38] || keyState[90])) {
-            y -= 0.4;
+            y -= 0.5;
         }
 
         if (y < 53 && (keyState[40] || keyState[83])) {
-            y += 0.4;
+            y += 0.5;
         }
 
         heart.style.top = y + "vh";
